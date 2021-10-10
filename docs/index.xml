@@ -6,7 +6,7 @@
     <description>Recent content on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 23 Jun 2020 12:33:45 +1000</lastBuildDate><atom:link href="https://takuji-sano.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 10:25:28 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Project</title>
       <link>https://takuji-sano.github.io/products/example/</link>
@@ -14,6 +14,15 @@
       
       <guid>https://takuji-sano.github.io/products/example/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan dapibus purus, vel maximus erat facilisis vel. Suspendisse eu ipsum consequat, sodales nulla vel, faucibus velit. Fusce imperdiet lacus nec cursus auctor. In vulputate arcu et nulla placerat, nec pulvinar quam rhoncus. Praesent vel placerat nunc. Mauris elit felis, pulvinar egestas risus ut, fermentum ullamcorper orci. Integer tempor, neque sed fermentum eleifend, ligula est tincidunt purus, sodales semper elit enim ut mi.</description>
+    </item>
+    
+    <item>
+      <title>init Post</title>
+      <link>https://takuji-sano.github.io/blog/1st-post/</link>
+      <pubDate>Sun, 10 Oct 2021 10:25:28 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/1st-post/</guid>
+      <description>Github Pages と hugo を使ったブログ環境の動作確認用の記事です。</description>
     </item>
     
     <item>

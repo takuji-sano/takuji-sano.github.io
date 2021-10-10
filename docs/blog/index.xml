@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 10:25:28 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>init Post</title>
+      <link>https://takuji-sano.github.io/blog/1st-post/</link>
+      <pubDate>Sun, 10 Oct 2021 10:25:28 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/1st-post/</guid>
+      <description>Github Pages と hugo を使ったブログ環境の動作確認用の記事です。</description>
+    </item>
+    
     <item>
       <title>Markdown Syntax Guide</title>
       <link>https://takuji-sano.github.io/blog/markdown-syntax/</link>

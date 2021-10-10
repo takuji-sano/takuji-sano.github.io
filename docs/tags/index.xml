@@ -6,7 +6,16 @@
     <description>Recent content in Tags on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://takuji-sano.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 10:25:28 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://takuji-sano.github.io/tags/blog/</link>
+      <pubDate>Sun, 10 Oct 2021 10:25:28 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>css</title>
       <link>https://takuji-sano.github.io/tags/css/</link>

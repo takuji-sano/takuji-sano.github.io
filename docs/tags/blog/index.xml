@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on SANO BLOG</title>
+    <link>https://takuji-sano.github.io/tags/blog/</link>
+    <description>Recent content in blog on SANO BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 10 Oct 2021 10:25:28 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>init Post</title>
+      <link>https://takuji-sano.github.io/blog/1st-post/</link>
+      <pubDate>Sun, 10 Oct 2021 10:25:28 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/1st-post/</guid>
+      <description>Github Pages と hugo を使ったブログ環境の動作確認用の記事です。</description>
+    </item>
+    
+  </channel>
+</rss>
