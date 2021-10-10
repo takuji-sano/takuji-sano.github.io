@@ -33,10 +33,10 @@
 
 
 
-<meta name="description" content="Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年…当時 jekyll を使っ">
+<meta name="description" content="Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年… 当時 jekyll を使">
 <meta property="og:title" content=" | " />
 <meta property="og:site_name" content="SANO BLOG">
-<meta property="og:description" content="Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年…当時 jekyll を使っ">
+<meta property="og:description" content="Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年… 当時 jekyll を使">
 <meta property="og:url" content="https://takuji-sano.github.io/blog/hugo-setup/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
@@ -45,7 +45,7 @@
 
 <link rel="canonical" href="https://takuji-sano.github.io/blog/hugo-setup/">
 
-<meta name="twitter:description" content="Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年…当時 jekyll を使っ">
+<meta name="twitter:description" content="Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年… 当時 jekyll を使">
 <meta property="article:published_time" content="2021-10-10T18:14:01&#43;09:00">
 <meta property="article:updated_time" content="2021-10-10T18:14:01&#43;09:00">
 
@@ -152,20 +152,18 @@
         
         <div class="content py-1"><h1 id="hugo-を使ってブログを開設してみる">Hugo を使ってブログを開設してみる</h1>
 <h2 id="はじめに">はじめに</h2>
-<p>Github のアカウントを作成して早数年…<!-- raw HTML omitted -->
-当時 jekyll を使って、Github Pages に自分のサイトを作成してから放置状態でした。<!-- raw HTML omitted -->
-最近アクティブに使うようになり、イロイロと調べていると、みなさんプロフィール画面の README をカスタマイズされています。海外のエンジニアは熱心にカスタムしてる印象です。<!-- raw HTML omitted -->
-おそらく名刺代わりになるツールなんでしょう。たぶん。<!-- raw HTML omitted -->
-ということで、私もカスタマイズしてみました。<!-- raw HTML omitted -->
-そうすると、気になるのは放置状態のサイト…<!-- raw HTML omitted -->
-これは、刷新しなければと思い立ったのがきっかけです。<!-- raw HTML omitted -->
-ググってみると jekyll か Hugo か pelican を使われてる方が多そうです。<!-- raw HTML omitted -->
-Hugo のテーマが豊富だったので、今回は Hugo に乗り換えてみようと思います。<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-下記のページを参考にしながら、やってみました。<!-- raw HTML omitted -->
-<a href="https://open-groove.net/other-tools/hugo-github-pages-blog/">https://open-groove.net/other-tools/hugo-github-pages-blog/</a><!-- raw HTML omitted -->
-<a href="https://yonehub.y10e.com/2019/10/22/20191022_hugo_githubio/">https://yonehub.y10e.com/2019/10/22/20191022_hugo_githubio/</a><!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+<p>Github のアカウントを作成して早数年…<br>
+当時 jekyll を使って、Github Pages に自分のサイトを作成してから放置状態でした。<br>
+最近アクティブに使うようになり、イロイロと調べていると、みなさんプロフィール画面の README をカスタマイズされています。海外のエンジニアは熱心にカスタムしてる印象です。<br>
+おそらく名刺代わりになるツールなんでしょう。たぶん。<br>
+ということで、私もカスタマイズしてみました。<br>
+そうすると、気になるのは放置状態のサイト…<br>
+これは、刷新しなければと思い立ったのがきっかけです。<br>
+ググってみると jekyll か Hugo か pelican を使われてる方が多そうです。<br>
+Hugo のテーマが豊富だったので、今回は Hugo に乗り換えてみようと思います。</p>
+<p>下記のページを参考にしながら、やってみました。<br>
+<a href="https://open-groove.net/other-tools/hugo-github-pages-blog/">https://open-groove.net/other-tools/hugo-github-pages-blog/</a><br>
+<a href="https://yonehub.y10e.com/2019/10/22/20191022_hugo_githubio/">https://yonehub.y10e.com/2019/10/22/20191022_hugo_githubio/</a></p>
 <h2 id="hugo-のインストール">hugo のインストール</h2>
 <p>下記コマンドでインストールして、バージョン確認します。</p>
 <pre tabindex="0"><code>$ brew install hugo
@@ -173,19 +171,16 @@ $ brew version
 hugo v0.88.1+extended darwin/amd64 BuildDate=unknown
 </code></pre><p>次にワークディレクトリを作成します。</p>
 <pre tabindex="0"><code>$ hugo new site blog
-</code></pre><!-- raw HTML omitted -->
-<h2 id="theme-のインストール">Theme のインストール</h2>
-<p>hugo で準備されているテーマを下記のサイトで選びます。<!-- raw HTML omitted -->
-<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-今回は「Tella」というテーマで作業を進めてみます。<!-- raw HTML omitted -->
-<a href="https://github.com/opera7133/tella">https://github.com/opera7133/tella</a><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-download を押すと、そのテーマのリポジトリに飛びます。<!-- raw HTML omitted -->
-見てみると、postcss-cli と autoprefixer がインストールされていることが前提条件のようです。<!-- raw HTML omitted -->
-これをインストールするための npm コマンドが必要そうです。<!-- raw HTML omitted -->
-これは、node.js をインストールすると同時にインストールされるという情報がありました。<!-- raw HTML omitted -->
-まずは、node.js がインストールされているか確認しましょう。<!-- raw HTML omitted --></p>
+</code></pre><h2 id="theme-のインストール">Theme のインストール</h2>
+<p>hugo で準備されているテーマを下記のサイトで選びます。<br>
+<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+<p>今回は「Tella」というテーマで作業を進めてみます。<br>
+<a href="https://github.com/opera7133/tella">https://github.com/opera7133/tella</a></p>
+<p>download を押すと、そのテーマのリポジトリに飛びます。<br>
+見てみると、postcss-cli と autoprefixer がインストールされていることが前提条件のようです。<br>
+これをインストールするための npm コマンドが必要そうです。<br>
+これは、node.js をインストールすると同時にインストールされるという情報がありました。<br>
+まずは、node.js がインストールされているか確認しましょう。</p>
 <pre tabindex="0"><code>$ node -v
 </code></pre><p>インストールされていない場合は、node.js の管理を行うための nodebrew が必要みたいです。</p>
 <pre tabindex="0"><code>$ brew install nodebrew
@@ -230,13 +225,13 @@ $ nodebrew install-binary latest
 Fetching: https://nodejs.org/dist/v16.11.0/node-v16.11.0-darwin-x64.tar.gz
 ############################################################################################################################################################################################# 100.0%
 Installed successfully
-</code></pre><p>うまくいきました。<!-- raw HTML omitted -->
+</code></pre><p>うまくいきました。<br>
 インストールされているバージョンを確認しておきましょう。</p>
 <pre tabindex="0"><code>$ nodebrew list
 v16.11.0
 
 current: none
-</code></pre><p>ここで、「current: none」と表示されているのは、有効になっていないからだそうです。<!-- raw HTML omitted -->
+</code></pre><p>ここで、「current: none」と表示されているのは、有効になっていないからだそうです。<br>
 下記コマンドで有効にして、バージョンを再確認しておきます。</p>
 <pre tabindex="0"><code>$ nodebrew use v16.11.0
 use v16.11.0
@@ -303,17 +298,17 @@ changed 1 package, and audited 200 packages in 3s
   run `npm fund` for details
 
 found 0 vulnerabilities
-</code></pre><p>「found 0 vulnerabilities」（脆弱性が 0 件発見された）ということで、解決できたようです。<!-- raw HTML omitted -->
+</code></pre><p>「found 0 vulnerabilities」（脆弱性が 0 件発見された）ということで、解決できたようです。<br>
 次に設定ファイルを編集します。</p>
 <pre tabindex="0"><code>$ cp ../../
 $ vi config.toml
-</code></pre><p>URL、適用するテーマなどを設定します。<!-- raw HTML omitted -->
+</code></pre><p>URL、適用するテーマなどを設定します。<br>
 編集後は下記のようになります。</p>
 <pre tabindex="0"><code>baseURL = 'http://takuji-sano.github.io/'
 languageCode = 'ja-jp'
 title = 'My New Hugo Site'
 theme = 'Tella'
-</code></pre><p>次にトップページを作成します。<!-- raw HTML omitted -->
+</code></pre><p>次にトップページを作成します。<br>
 Theme の exampleSite からコピーして編集します。</p>
 <pre tabindex="0"><code>$ cp themes/tella/exampleSite/content/_index.md content
 $ vi content/_index.md
@@ -358,11 +353,10 @@ Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-</code></pre><p>サーバーが起動したら、ブラウザで「localhost:1313」にアクセスし、何か表示されていれば、ひとまず動作はしています。<!-- raw HTML omitted -->
-ですが、準備した記事が表示されません…<!-- raw HTML omitted -->
-何かが違うようです。<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-theme の exampleSite にある config.toml をコピーしてやってみましょう。</p>
+</code></pre><p>サーバーが起動したら、ブラウザで「localhost:1313」にアクセスし、何か表示されていれば、ひとまず動作はしています。<br>
+ですが、準備した記事が表示されません…<br>
+何かが違うようです。</p>
+<p>theme の exampleSite にある config.toml をコピーしてやってみましょう。</p>
 <pre tabindex="0"><code>$ cp themes/tella/exampleSite/config.toml ./
 $ vi config.toml
 </code></pre><p>最初のメタデータ部分を以下のように編集しました。</p>
@@ -380,13 +374,13 @@ $ vi config.toml
  12 ↲
  13 # If you're using Google Analytics, you can enable this feature.↲
  14 googleAnalytics = &quot;UA-12345678-1&quot;↲
-</code></pre><p>サーバを起動させて、再確認すると、メニューなどが表示されました。<!-- raw HTML omitted -->
+</code></pre><p>サーバを起動させて、再確認すると、メニューなどが表示されました。<br>
 サーバ起動時にテーマを指定することができるようですので、試してみましょう。</p>
 <pre tabindex="0"><code>$ hugo server -D -t Tella
-</code></pre><p>準備した記事が表示されました。<!-- raw HTML omitted -->
-config.toml にテーマ名を記述したのに… なんででしょうね。<!-- raw HTML omitted -->
-ま、おいといて。<!-- raw HTML omitted -->
-少し、勘違いしていましたが、Theme を設定するとデモにあったようなサイトができると思っていました。<!-- raw HTML omitted -->
+</code></pre><p>準備した記事が表示されました。<br>
+config.toml にテーマ名を記述したのに… なんででしょうね。<br>
+ま、おいといて。<br>
+少し、勘違いしていましたが、Theme を設定するとデモにあったようなサイトができると思っていました。<br>
 とりあえず、デモと同じ状態にするために themes/tella/exampleSite にあるコンテンツを themes/tella/ 以下のディレクトリにコピーしてみます。</p>
 <pre tabindex="0"><code>$ cp exampleSite/archetypes/* archetypes
 $ cp -r exampleSite/static/img/ static/img
@@ -395,18 +389,17 @@ $ cp exampleSite/content/contact.md ../../content
 $ cp -r exampleSite/content/blog ../../content/
 $ cp -r exampleSite/content/products ../../content/
 $ cp -r exampleSite/data ./
-</code></pre><p>はい。ようやくできました。<!-- raw HTML omitted -->
-ですが、動作確認用の記事が見えなくなりました。<!-- raw HTML omitted -->
+</code></pre><p>はい。ようやくできました。<br>
+ですが、動作確認用の記事が見えなくなりました。<br>
 Theme の構造からすると、post ではなく blog に記事を作成するみたい。</p>
 <pre tabindex="0"><code>$ hugo new blog/20211010-1_init-post.md
-</code></pre><p>できた〜。<!-- raw HTML omitted -->
+</code></pre><p>できた〜。<br>
 post は消しておきましょう。</p>
 <pre tabindex="0"><code>rm -rf content/post/
-</code></pre><p>Theme のその他ページや表示されるテキストなどの細かな部分は、おいおい直すとして。<!-- raw HTML omitted -->
-次に進めましょう。<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+</code></pre><p>Theme のその他ページや表示されるテキストなどの細かな部分は、おいおい直すとして。<br>
+次に進めましょう。</p>
 <h2 id="github-pages-公開用の設定">Github Pages 公開用の設定</h2>
-<p>ここで、[github ユーザ名].github.io という名前のリポジトリを Public で作成しておいてください。<!-- raw HTML omitted -->
+<p>ここで、[github ユーザ名].github.io という名前のリポジトリを Public で作成しておいてください。<br>
 下記のコマンドで初期化します。</p>
 <pre tabindex="0"><code>$ echo &quot;# takuji-sano.github.io&quot; &gt;&gt; README.md
 $ git init
@@ -415,42 +408,41 @@ $ git commit -m &quot;first commit&quot;
 $ git branch -M main
 $ git remote add origin https://github.com/takuji-sano/takuji-sano.github.io.git
 $ git push -u origin main
-</code></pre><p><a href="https://takuji-sano.github.io">https://takuji-sano.github.io/</a> にアクセスしてページが表示されたら問題ありません。<!-- raw HTML omitted --></p>
-<p>で、参考にしているページは共に、public ディレクトリをリポジトリにプッシュする的な話になるが、どこにも public なんで無い…<!-- raw HTML omitted -->
-よーわからんので、イロイロ漁ってみると、<a href="https://qiita.com/BIwashi/items/c011454bdb9a523bba4a">https://qiita.com/BIwashi/items/c011454bdb9a523bba4a</a>に説明がありました！<!-- raw HTML omitted -->
-次のコマンド実行で public ができるみたい。<!-- raw HTML omitted --></p>
+</code></pre><p><a href="https://takuji-sano.github.io">https://takuji-sano.github.io/</a> にアクセスしてページが表示されたら問題ありません。</p>
+<p>で、参考にしているページは共に、public ディレクトリをリポジトリにプッシュする的な話になるが、どこにも public なんで無い…<br>
+よーわからんので、イロイロ漁ってみると、<a href="https://qiita.com/BIwashi/items/c011454bdb9a523bba4a">https://qiita.com/BIwashi/items/c011454bdb9a523bba4a</a>に説明がありました！<br>
+次のコマンド実行で public ができるみたい。</p>
 <pre tabindex="0"><code>$ hugo
-</code></pre><p>できたー！<!-- raw HTML omitted -->
-ようやく意味わかってきた。hugo コマンドで書いた記事をコンパイルして public ディレクトリに静的サイトが生成されるのね。<!-- raw HTML omitted -->
-で、それを github.io のリポジトリのサブモジュールとして紐付けておけば良いと。<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-ようやく公開環境のできあがりかと思ったら…<!-- raw HTML omitted -->
-github pages の仕様で、公開ディレクトリは「docs」だそうで…<!-- raw HTML omitted -->
-その設定が必要です。<!-- raw HTML omitted -->
-config.toml に下記の１行を追記して、hugo コマンドで生成します。<!-- raw HTML omitted -->
+</code></pre><p>できたー！<br>
+ようやく意味わかってきた。hugo コマンドで書いた記事をコンパイルして public ディレクトリに静的サイトが生成されるのね。<br>
+で、それを github.io のリポジトリのサブモジュールとして紐付けておけば良いと。</p>
+<p>ようやく公開環境のできあがりかと思ったら…<br>
+github pages の仕様で、公開ディレクトリは「docs」だそうで…<br>
+その設定が必要です。<br>
+config.toml に下記の１行を追記して、hugo コマンドで生成します。<br>
 また、先程の public は不要ですので削除しておきます。</p>
 <pre tabindex="0"><code>$ vi config.toml
 追記する記述：publishDir = &quot;docs&quot;
 $ rm -rf public/
 $ hugo
-</code></pre><p>次に、リポジトリにアクセスして、[Settings] の左メニューにある [Pages] の source にある /(root) を /docs に変更して、save ボタンを押します。<!-- raw HTML omitted -->
-最後に、生成した docs を github.io/docs のサブモジュールとしておけば良さそうです。<!-- raw HTML omitted -->
+</code></pre><p>次に、リポジトリにアクセスして、[Settings] の左メニューにある [Pages] の source にある /(root) を /docs に変更して、save ボタンを押します。<br>
+最後に、生成した docs を github.io/docs のサブモジュールとしておけば良さそうです。<br>
 が…
-イロイロとやってみましたが、うまく行かず…<!-- raw HTML omitted -->
-最終的には、config.toml の publishDir を &ldquo;../takuji-sano.github.io/docs&rdquo; としたら一応できた。<!-- raw HTML omitted -->
-けど、よく見ると追加した記事だけ表示されない…<!-- raw HTML omitted -->
-ローカルのサーバで表示させると問題ないが、github.io にアップすると表示されない。<!-- raw HTML omitted --></p>
-<p>で、結局は、追加した記事のメタデータにある draft が true だったので、非公開扱いされてただけでした…<!-- raw HTML omitted --></p>
+イロイロとやってみましたが、うまく行かず…<br>
+最終的には、config.toml の publishDir を &ldquo;../takuji-sano.github.io/docs&rdquo; としたら一応できた。<br>
+けど、よく見ると追加した記事だけ表示されない…<br>
+ローカルのサーバで表示させると問題ないが、github.io にアップすると表示されない。</p>
+<p>で、結局は、追加した記事のメタデータにある draft が true だったので、非公開扱いされてただけでした…</p>
 <pre tabindex="0"><code>draft: false
 </code></pre><p>ふぅ。やっとできた。
 全体の流れを書いておきます。</p>
 <ul>
-<li>記事の雛形を生成する<!-- raw HTML omitted -->
+<li>記事の雛形を生成する<br>
 $ hugo new blog/xxx</li>
 <li>記事を書く</li>
-<li>ローカルサーバで内容を確認する<!-- raw HTML omitted -->
+<li>ローカルサーバで内容を確認する<br>
 $ hugo server -D -t tella</li>
-<li>問題なければ、draft: false としてデプロイ<!-- raw HTML omitted -->
+<li>問題なければ、draft: false としてデプロイ<br>
 $ hugo</li>
 <li>github.io の変更をコミット＆プッシュ</li>
 </ul>
