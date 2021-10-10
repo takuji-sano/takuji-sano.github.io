@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 10 Oct 2021 10:25:28 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 18:14:01 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo を使ってブログを開設してみる</title>
+      <link>https://takuji-sano.github.io/blog/hugo-setup/</link>
+      <pubDate>Sun, 10 Oct 2021 18:14:01 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/hugo-setup/</guid>
+      <description>Hugo を使ってブログを開設してみる はじめに Github のアカウントを作成して早数年…当時 jekyll を使って、Github Pages に自分のサイトを作成してから放置状態でし</description>
+    </item>
+    
     <item>
       <title>init Post</title>
       <link>https://takuji-sano.github.io/blog/1st-post/</link>
