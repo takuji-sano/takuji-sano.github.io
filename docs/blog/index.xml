@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 10 Oct 2021 18:14:01 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 23:55:34 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>テーマを改造してみる</title>
+      <link>https://takuji-sano.github.io/blog/20211011-1_modify-messages/</link>
+      <pubDate>Mon, 11 Oct 2021 23:55:34 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/20211011-1_modify-messages/</guid>
+      <description>埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;Tella, A Hugo theme for Companies&amp;rdquo; を書き換えてみる。 下記コマンド</description>
+    </item>
+    
     <item>
       <title>Hugo を使ってブログを開設してみる</title>
       <link>https://takuji-sano.github.io/blog/hugo-setup/</link>

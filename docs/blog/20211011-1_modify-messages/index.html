@@ -14,7 +14,7 @@
 </script>
 
 <meta charset="utf-8">
-    <title>SANO BLOG | Emoji Support</title>
+    <title>SANO BLOG | テーマを改造してみる</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="https://takuji-sano.github.io/favicon-32x32.png">
     
@@ -28,35 +28,37 @@
     
     <link href="https://takuji-sano.github.io/css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://takuji-sano.github.io/css/custom.css">
-<meta property="og:title" content="SANO BLOG | Emoji Support" />
+<meta property="og:title" content="SANO BLOG | テーマを改造してみる" />
 
 
 
 
-<meta name="description" content="Guide to emoji usage in Hugo">
+<meta name="description" content="埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;T">
 <meta property="og:title" content=" | " />
 <meta property="og:site_name" content="SANO BLOG">
-<meta property="og:description" content="Guide to emoji usage in Hugo">
-<meta property="og:url" content="https://takuji-sano.github.io/blog/emoji-support/">
+<meta property="og:description" content="埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;T">
+<meta property="og:url" content="https://takuji-sano.github.io/blog/20211011-1_modify-messages/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tech_chiba">
 
-<link rel="canonical" href="https://takuji-sano.github.io/blog/emoji-support/">
+<link rel="canonical" href="https://takuji-sano.github.io/blog/20211011-1_modify-messages/">
 
-<meta name="twitter:description" content="Guide to emoji usage in Hugo">
-<meta property="article:published_time" content="2019-03-05T00:00:00&#43;00:00">
-<meta property="article:updated_time" content="2019-03-05T00:00:00&#43;00:00">
-
-
+<meta name="twitter:description" content="埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;T">
+<meta property="article:published_time" content="2021-10-11T23:55:34&#43;09:00">
+<meta property="article:updated_time" content="2021-10-11T23:55:34&#43;09:00">
 
 
 
-<meta property="og:image" content="https://takuji-sano.github.io">
-<meta property="og:image:url" content="https://takuji-sano.github.io">
 
-<meta name="twitter:title" content="Emoji Support">
+
+    
+<meta property="og:image" content="https://takuji-sano.github.io/img/pexels-pineapple-supply-co-211856.jpg">
+<meta property="og:image:url" content="https://takuji-sano.github.io/img/pexels-pineapple-supply-co-211856.jpg">
+    
+
+<meta name="twitter:title" content="テーマを改造してみる">
 <link rel="preload" href="https://takuji-sano.github.io/css/monokai-sublime.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://takuji-sano.github.io/css/sweetalert2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -125,73 +127,72 @@
         </div>
 <div class="mx-auto my-10 max-w-6xl">
     <div class="mx-3 col-span-3 lg:col-span-2 px-2">
-        <h1 class="title text-5xl">Emoji Support</h1>
+        <h1 class="title text-5xl">テーマを改造してみる</h1>
         <section class="mb-4">
             <hr class="my-2">
-            <h4 id="date"><span class="icon-access_time text-xl mr-2"></span>2019/03/05 </h4>
+            <h4 id="date"><span class="icon-access_time text-xl mr-2"></span>2021/10/11 </h4>
             
-            <h4><span class="icon-person text-xl mt-1 mr-2"></span>Hugo Authors</h4>
+            <h4><span class="icon-person text-xl mt-1 mr-2"></span>Takuji Sano</h4>
             
             
             <hr class="my-2">
         </section>
         
-        <div class="content py-1"><p>Emoji can be enabled in a Hugo project in a number of ways.</p>
-<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
-<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
-<!-- raw HTML omitted -->
-<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
-<hr>
-<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
-  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}</code></pre></div>
-
-<style>
-.emojify {
-	font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-	font-size: 2rem;
-	vertical-align: middle;
-}
-@media screen and (max-width:650px) {
-  .nowrap {
-    display: block;
-    margin: 25px 0;
-  }
-}
-</style></div>
+        <img class="my-4" src="https://takuji-sano.github.io/img/pexels-pineapple-supply-co-211856.jpg">
+        
+        <div class="content py-1"><h1 id="埋め込まれているメッセージを更新する">埋め込まれているメッセージを更新する</h1>
+<h2 id="探し方">探し方</h2>
+<p>最初に表示される写真の中央にオーバーレイされている文字列 &ldquo;Tella, A Hugo theme for Companies&rdquo; を書き換えてみる。<br>
+下記コマンドで、記載されているファイルを探します。</p>
+<pre tabindex="0"><code>$ grep -r &quot;Tella, A Hugo theme for Companies.&quot; ./*
+./themes/tella/exampleSite/data/slide.json:    &quot;title&quot;: &quot;Tella, A Hugo theme for Companies.&quot;,
+./themes/tella/README.md:Tella, A Hugo theme for Companies.
+./themes/tella/data/slide.json:    &quot;title&quot;: &quot;Tella, A Hugo theme for Companies.&quot;,
+</code></pre><p>grep に recursive のオプションつけて、対象は全ファイルって感じです。<br>
+結果としては data/slide.json に書かれてるみたいですね。</p>
+<h1 id="contact-ページの廃止">Contact ページの廃止</h1>
+<p>次に「Contact」ページを見てみます。<br>
+layouts/shortcodes/form.html を見ると、<a href="https://getform.io">getform.io</a> というサービスに飛ばしてるようです。<br>
+これは、問い合わせフォームの内容を getform 上に蓄積および管理ができるサービスのようで、アカウント作る必要があります。<br>
+当面つかう予定はないので、メニューから消したいですね。<br>
+メニューの設定は config.toml に記載されているので、消しておきます。<br>
+ローカルサーバで動作確認してみると…消えてない…
+サーバ再起動してみたら、消せたわ。</p>
+<p>しかし、アイコンのつもりで選んだ画像が、巨大に表示されるのね…<br>
+この辺は、また後日。</p>
+</div>
         <div class="share m-2 grid grid-cols-2 lg:grid-cols-3 gap-2">
-            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2femoji-support%2f&text=Emoji%20Support" target="_blank"
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&text=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
                 title="Tweet" class="share-button twitter">
                 <div class="text-white text-center">
                     <span class="icon-twitter text-lg mr-2"></span>Twitter
                 </div>
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftakuji-sano.github.io%2fblog%2femoji-support%2f&t=Emoji%20Support" target="_blank"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&t=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
                 title="Facebook" class="share-button facebook">
                 <div class="text-white text-center">
                     <span class="icon-facebook text-lg mr-2"></span>Facebook
                 </div>
             </a>
-            <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2femoji-support%2f&title=Emoji%20Support" target="_blank"
+            <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&title=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
                 title="hatena" class="share-button hatena">
                 <div class="text-white text-center">
                     <span class="icon-hatenabookmark text-lg mr-2"></span>Hatena
                 </div>
             </a>
-            <a href="https://getpocket.com/edit?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2femoji-support%2f&title=Emoji%20Support" target="_blank" title="pocket"
+            <a href="https://getpocket.com/edit?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&title=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank" title="pocket"
                 class="share-button pocket">
                 <div class="text-white text-center">
                     <span class="icon-get-pocket text-lg mr-2"></span>Pocket
                 </div>
             </a>
-            <a href="https://timeline.line.me/social-plugin/share?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2femoji-support%2f" class="share-button line">
+            <a href="https://timeline.line.me/social-plugin/share?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f" class="share-button line">
                 <div class="text-white text-center">
                     <span class="icon-line text-lg mr-2"></span>LINE
                 </div>
             </a>
             <a href="javascript:OnClickURL();" class="share-button url" title="Copy to Clipboard"
-                data-clipboard-text="Emoji Support https://takuji-sano.github.io/blog/emoji-support/" id="url">
+                data-clipboard-text="テーマを改造してみる https://takuji-sano.github.io/blog/20211011-1_modify-messages/" id="url">
                 <div class="text-white text-center">
                     <span class="icon-link text-lg mr-2"></span>Copy
                 </div>
@@ -202,14 +203,14 @@
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
+                    <a class="previous lg:text-2xl" href="https://takuji-sano.github.io/blog/hugo-setup/">
+                        <div
+                            class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                            <span class="icon-keyboard_arrow_left"></span> Hugo を使ってブログを開設してみる
+                        </div>
+                    </a>
+                    
                 </div>
-                
-                <a class="next lg:text-2xl" href="https://takuji-sano.github.io/blog/math-typesetting/">
-                    <div
-                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                        Math Typesetting <span class="icon-keyboard_arrow_right"></span>
-                    </div>
-                </a>
                 
             </div>
         </aside>
