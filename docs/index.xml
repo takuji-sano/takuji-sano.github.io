@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://takuji-sano.github.io/about/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://takuji-sano.github.io/about/</guid>
+      <description>Profile  Electrical design of Oxide Etcher. Board design for WCDMA tester. Development of ASIC for Oscilloscope. Gate array design and verification of TFT driver IC. Test design of TFT Driver IC. ODM design for embedded boards. Development of edge AI processing unit.  </description>
+    </item>
+    
+    <item>
       <title>init Post</title>
       <link>https://takuji-sano.github.io/blog/1st-post/</link>
       <pubDate>Sun, 10 Oct 2021 10:25:28 +0900</pubDate>
