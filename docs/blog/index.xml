@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Oct 2021 23:55:34 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 15:14:56 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る</title>
+      <link>https://takuji-sano.github.io/blog/zsh_env/</link>
+      <pubDate>Sat, 16 Oct 2021 15:14:56 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/zsh_env/</guid>
+      <description>会社の PC で vscode を起動すると味気ない… 自宅の Mac の環境はイケてる状態なので、ギャップが激しい… ということで、ググってみると、多くの人が Windows Terminal と zsh でモ</description>
+    </item>
+    
     <item>
       <title>テーマを改造してみる</title>
       <link>https://takuji-sano.github.io/blog/20211011-1_modify-messages/</link>

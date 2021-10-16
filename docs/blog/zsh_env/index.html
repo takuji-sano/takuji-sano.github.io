@@ -14,7 +14,7 @@
 </script>
 
 <meta charset="utf-8">
-    <title>SANO BLOG | テーマを改造してみる</title>
+    <title>SANO BLOG | WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="https://takuji-sano.github.io/favicon-32x32.png">
     
@@ -28,37 +28,37 @@
     
     <link href="https://takuji-sano.github.io/css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://takuji-sano.github.io/css/custom.css">
-<meta property="og:title" content="SANO BLOG | テーマを改造してみる" />
+<meta property="og:title" content="SANO BLOG | WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る" />
 
 
 
 
-<meta name="description" content="埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;T">
+<meta name="description" content="会社の PC で vscode を起動すると味気ない… 自宅の Mac の環境はイケてる状態なので、ギャップが激しい… ">
 <meta property="og:title" content=" | " />
 <meta property="og:site_name" content="SANO BLOG">
-<meta property="og:description" content="埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;T">
-<meta property="og:url" content="https://takuji-sano.github.io/blog/20211011-1_modify-messages/">
+<meta property="og:description" content="会社の PC で vscode を起動すると味気ない… 自宅の Mac の環境はイケてる状態なので、ギャップが激しい… ">
+<meta property="og:url" content="https://takuji-sano.github.io/blog/zsh_env/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tech_chiba">
 
-<link rel="canonical" href="https://takuji-sano.github.io/blog/20211011-1_modify-messages/">
+<link rel="canonical" href="https://takuji-sano.github.io/blog/zsh_env/">
 
-<meta name="twitter:description" content="埋め込まれているメッセージを更新する 探し方 最初に表示される写真の中央にオーバーレイされている文字列 &amp;ldquo;T">
-<meta property="article:published_time" content="2021-10-11T23:55:34&#43;09:00">
-<meta property="article:updated_time" content="2021-10-11T23:55:34&#43;09:00">
+<meta name="twitter:description" content="会社の PC で vscode を起動すると味気ない… 自宅の Mac の環境はイケてる状態なので、ギャップが激しい… ">
+<meta property="article:published_time" content="2021-10-16T15:14:56&#43;09:00">
+<meta property="article:updated_time" content="2021-10-16T15:14:56&#43;09:00">
 
 
 
 
 
     
-<meta property="og:image" content="https://takuji-sano.github.io/img/pexels-pineapple-supply-co-211856.jpg">
-<meta property="og:image:url" content="https://takuji-sano.github.io/img/pexels-pineapple-supply-co-211856.jpg">
+<meta property="og:image" content="https://takuji-sano.github.io/img/pexels-gdtography-911758.jpg">
+<meta property="og:image:url" content="https://takuji-sano.github.io/img/pexels-gdtography-911758.jpg">
     
 
-<meta name="twitter:title" content="テーマを改造してみる">
+<meta name="twitter:title" content="WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る">
 <link rel="preload" href="https://takuji-sano.github.io/css/monokai-sublime.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://takuji-sano.github.io/css/sweetalert2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -117,10 +117,10 @@
         </div>
 <div class="mx-auto my-10 max-w-6xl">
     <div class="mx-3 col-span-3 lg:col-span-2 px-2">
-        <h1 class="title text-5xl">テーマを改造してみる</h1>
+        <h1 class="title text-5xl">WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る</h1>
         <section class="mb-4">
             <hr class="my-2">
-            <h4 id="date"><span class="icon-access_time text-xl mr-2"></span>2021/10/11 </h4>
+            <h4 id="date"><span class="icon-access_time text-xl mr-2"></span>2021/10/16 </h4>
             
             <h4><span class="icon-person text-xl mt-1 mr-2"></span>Takuji Sano</h4>
             
@@ -128,61 +128,74 @@
             <hr class="my-2">
         </section>
         
-        <img class="my-4" src="https://takuji-sano.github.io/img/pexels-pineapple-supply-co-211856.jpg">
+        <img class="my-4" src="https://takuji-sano.github.io/img/pexels-gdtography-911758.jpg">
         
-        <div class="content py-1"><h1 id="埋め込まれているメッセージを更新する">埋め込まれているメッセージを更新する</h1>
-<h2 id="探し方">探し方</h2>
-<p>最初に表示される写真の中央にオーバーレイされている文字列 &ldquo;Tella, A Hugo theme for Companies&rdquo; を書き換えてみる。<br>
-下記コマンドで、記載されているファイルを探します。</p>
-<pre tabindex="0"><code>$ grep -r &quot;Tella, A Hugo theme for Companies.&quot; ./*
-./themes/tella/exampleSite/data/slide.json:    &quot;title&quot;: &quot;Tella, A Hugo theme for Companies.&quot;,
-./themes/tella/README.md:Tella, A Hugo theme for Companies.
-./themes/tella/data/slide.json:    &quot;title&quot;: &quot;Tella, A Hugo theme for Companies.&quot;,
-</code></pre><p>grep に recursive のオプションつけて、対象は全ファイルって感じです。<br>
-結果としては data/slide.json に書かれてるみたいですね。</p>
-<h1 id="contact-ページの廃止">Contact ページの廃止</h1>
-<p>次に「Contact」ページを見てみます。<br>
-layouts/shortcodes/form.html を見ると、<a href="https://getform.io">getform.io</a> というサービスに飛ばしてるようです。<br>
-これは、問い合わせフォームの内容を getform 上に蓄積および管理ができるサービスのようで、アカウント作る必要があります。<br>
-当面つかう予定はないので、メニューから消したいですね。<br>
-メニューの設定は config.toml に記載されているので、消しておきます。<br>
-ローカルサーバで動作確認してみると…消えてない…
-サーバ再起動してみたら、消せたわ。</p>
-<p>しかし、アイコンのつもりで選んだ画像が、巨大に表示されるのね…<br>
-この辺は、また後日。</p>
+        <div class="content py-1"><p>会社の PC で vscode を起動すると味気ない…<br>
+自宅の Mac の環境はイケてる状態なので、ギャップが激しい…<br>
+ということで、ググってみると、多くの人が Windows Terminal と zsh でモダンな環境作ってるようです。<br>
+下記を参考に、WSL2 + vscode + zsh で試してみました。</p>
+<ol>
+<li><a href="https://qiita.com/mtsgi/items/8a844870f30b30ef21e4">https://qiita.com/mtsgi/items/8a844870f30b30ef21e4</a></li>
+<li><a href="https://zenn.dev/moroya/articles/0ab24a733e4b7a">https://zenn.dev/moroya/articles/0ab24a733e4b7a</a></li>
+<li><a href="https://qiita.com/mosh_shu/items/0dc06e8b4aecf7d68316">https://qiita.com/mosh_shu/items/0dc06e8b4aecf7d68316</a></li>
+</ol>
+<p>が、環境が違うためか微妙にうまくいかないところもあったので、メモしておきます。</p>
+<p>全体の流れとしては、以下のようになります。</p>
+<ul>
+<li>brew を入れる</li>
+<li>zsh を入れる</li>
+<li>prezto を入れる</li>
+<li>~/.zpreztorc はデフォルトのまま</li>
+<li>powerline を入れる</li>
+<li>ここで躓く。apt install, git clone 両方うまくいかない</li>
+<li>ベタに右クリックで入れる必要がありました</li>
+<li>dircolors 編集して見やすくする</li>
+</ul>
+<h2 id="brew-zsh-prezto-を入れる">brew, zsh, prezto を入れる</h2>
+<p>まずは、Ubuntu を更新しましょう。</p>
+<pre tabindex="0"><code>$ sudo apt update
+$ sudo apt upgrade
+</code></pre><p>まずは 1. を参考に macOS（またはLinux）用パッケージマネージャーの brew をインストールします。<br>
+つぎに 2. を参考に zsh、prezto を入れます。<br>
+~/.zpreztorc はお好みで。今はデフォルトのままにしてます。</p>
+<h2 id="powerline-フォントを入れる">Powerline フォントを入れる</h2>
+<p>色々と試行錯誤しましたが、結局は、3. にあるように普通に Windows にフォントをインストールする方法で住みました。</p>
+<h2 id="windowsのフォルダカラー修正">Windowsのフォルダカラー修正</h2>
+<p>最後に 1. に戻って、「Windowsのフォルダカラー修正」にある手順でカラーを編集すると、WSL2 + zsh + prezto + powerline の仕上がり〜。<br>
+<img src="img/zsh-image.png" alt="zsh-terminal"></p>
 </div>
         <div class="share m-2 grid grid-cols-2 lg:grid-cols-3 gap-2">
-            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&text=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fzsh_env%2f&text=WSL2%20%2b%20zsh%20%2b%20prezto%20%2b%20powerline%20%e3%81%a7%e3%82%a2%e3%82%ac%e3%82%8b%e7%92%b0%e5%a2%83%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank"
                 title="Tweet" class="share-button twitter">
                 <div class="text-white text-center">
                     <span class="icon-twitter text-lg mr-2"></span>Twitter
                 </div>
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&t=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fzsh_env%2f&t=WSL2%20%2b%20zsh%20%2b%20prezto%20%2b%20powerline%20%e3%81%a7%e3%82%a2%e3%82%ac%e3%82%8b%e7%92%b0%e5%a2%83%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank"
                 title="Facebook" class="share-button facebook">
                 <div class="text-white text-center">
                     <span class="icon-facebook text-lg mr-2"></span>Facebook
                 </div>
             </a>
-            <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&title=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
+            <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fzsh_env%2f&title=WSL2%20%2b%20zsh%20%2b%20prezto%20%2b%20powerline%20%e3%81%a7%e3%82%a2%e3%82%ac%e3%82%8b%e7%92%b0%e5%a2%83%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank"
                 title="hatena" class="share-button hatena">
                 <div class="text-white text-center">
                     <span class="icon-hatenabookmark text-lg mr-2"></span>Hatena
                 </div>
             </a>
-            <a href="https://getpocket.com/edit?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f&title=%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%94%b9%e9%80%a0%e3%81%97%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank" title="pocket"
+            <a href="https://getpocket.com/edit?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fzsh_env%2f&title=WSL2%20%2b%20zsh%20%2b%20prezto%20%2b%20powerline%20%e3%81%a7%e3%82%a2%e3%82%ac%e3%82%8b%e7%92%b0%e5%a2%83%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank" title="pocket"
                 class="share-button pocket">
                 <div class="text-white text-center">
                     <span class="icon-get-pocket text-lg mr-2"></span>Pocket
                 </div>
             </a>
-            <a href="https://timeline.line.me/social-plugin/share?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2f20211011-1_modify-messages%2f" class="share-button line">
+            <a href="https://timeline.line.me/social-plugin/share?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fzsh_env%2f" class="share-button line">
                 <div class="text-white text-center">
                     <span class="icon-line text-lg mr-2"></span>LINE
                 </div>
             </a>
             <a href="javascript:OnClickURL();" class="share-button url" title="Copy to Clipboard"
-                data-clipboard-text="テーマを改造してみる https://takuji-sano.github.io/blog/20211011-1_modify-messages/" id="url">
+                data-clipboard-text="WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る https://takuji-sano.github.io/blog/zsh_env/" id="url">
                 <div class="text-white text-center">
                     <span class="icon-link text-lg mr-2"></span>Copy
                 </div>
@@ -193,21 +206,14 @@ layouts/shortcodes/form.html を見ると、<a href="https://getform.io">getform
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
-                    <a class="previous lg:text-2xl" href="https://takuji-sano.github.io/blog/hugo-setup/">
+                    <a class="previous lg:text-2xl" href="https://takuji-sano.github.io/blog/20211011-1_modify-messages/">
                         <div
                             class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                            <span class="icon-keyboard_arrow_left"></span> Hugo を使ってブログを開設してみる
+                            <span class="icon-keyboard_arrow_left"></span> テーマを改造してみる
                         </div>
                     </a>
                     
                 </div>
-                
-                <a class="next lg:text-2xl" href="https://takuji-sano.github.io/blog/zsh_env/">
-                    <div
-                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                        WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る <span class="icon-keyboard_arrow_right"></span>
-                    </div>
-                </a>
                 
             </div>
         </aside>
