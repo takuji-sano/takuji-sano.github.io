@@ -54,8 +54,8 @@
 
 
     
-<meta property="og:image" content="https://takuji-sano.github.io/img/default.jpg">
-<meta property="og:image:url" content="https://takuji-sano.github.io/img/default.jpg">
+<meta property="og:image" content="https://takuji-sano.github.io/img/pexels-markus-winkler-4584830.jpg">
+<meta property="og:image:url" content="https://takuji-sano.github.io/img/pexels-markus-winkler-4584830.jpg">
     
 
 <meta name="twitter:title" content="GitHub token の Update について">
@@ -128,24 +128,28 @@
             <hr class="my-2">
         </section>
         
-        <img class="my-4" src="https://takuji-sano.github.io/img/default.jpg">
+        <img class="my-4" src="https://takuji-sano.github.io/img/pexels-markus-winkler-4584830.jpg">
         
         <div class="content py-1"><h1 id="git-credential-manager-core">Git Credential manager core</h1>
 <p>最初は、Linux 版をインストールして設定しており、動作していたように見えましたが、token の有効期限切れで更新しようとしたときに、情報が少なく困りました。<br>
 色々見ていると、WSL2 に Ubuntu 版を入れて使っている人は少数派だったようです。<br>
-そのため、下記を参考に、設定を無効にしました。
-<a href="http://memomo2.blogspot.com/2018/12/gitsource-treeauthentication-failed.html">http://memomo2.blogspot.com/2018/12/gitsource-treeauthentication-failed.html</a></p>
-<p>というわけで、情報が多い Windows 版をインストールして、WSL2 と連携させて運用する方法に切り替えました。<br>
-<a href="https://bitto.jp/posts/%E6%8A%80%E8%A1%93/WSL/wsl-git-credential/">https://bitto.jp/posts/%E6%8A%80%E8%A1%93/WSL/wsl-git-credential/</a></p>
+そのため、下記を参考に、設定を無効にしました。</p>
+<ul>
+<li><a href="http://memomo2.blogspot.com/2018/12/gitsource-treeauthentication-failed.html">http://memomo2.blogspot.com/2018/12/gitsource-treeauthentication-failed.html</a></li>
+</ul>
+<p>というわけで、情報が多い Windows 版をインストールして、WSL2 と連携させて運用する方法に切り替えました。</p>
+<ul>
+<li><a href="https://bitto.jp/posts/%E6%8A%80%E8%A1%93/WSL/wsl-git-credential/">https://bitto.jp/posts/%E6%8A%80%E8%A1%93/WSL/wsl-git-credential/</a></li>
+</ul>
 <h1 id="トークンの更新について">トークンの更新について</h1>
-<p>トークンの有効期限が近づいてきたら github からメールが来ます。<br>
-このときにトークンを再発行して設定するわけですが、再設定するコマンドを探しても見つけられませんでした。 <br>
+<p>token の有効期限が近づいてきたら github からメールが来ます。<br>
+このときに token を再発行して設定するわけですが、再設定するコマンドを探しても見つけられませんでした。 <br>
 Windows の認証を一度削除するとうまくいくようですので、下記のサイトを参考に設定してみました。</p>
 <ul>
 <li><a href="https://qiita.com/k3ntar0/items/03be3a1396a77a0d3f26">https://qiita.com/k3ntar0/items/03be3a1396a77a0d3f26</a></li>
-<li><a href="https://webbibouroku.com/Blog/Article/git-logout-win">https://webbibouroku.com/Blog/Article/git-logout-win</a>
-次に git にアクセスするとユーザ名とパスワードを聞かれるので、そのときに新しいトークンを設定すれば解決と。</li>
+<li><a href="https://webbibouroku.com/Blog/Article/git-logout-win">https://webbibouroku.com/Blog/Article/git-logout-win</a></li>
 </ul>
+<p>次に git にアクセスするとユーザ名とパスワードを聞かれるので、そのときに新しいトークンを設定すれば解決と。</p>
 </div>
         <div class="share m-2 grid grid-cols-2 lg:grid-cols-3 gap-2">
             <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fgit-token-update%2f&text=GitHub%20token%20%e3%81%ae%20Update%20%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank"
