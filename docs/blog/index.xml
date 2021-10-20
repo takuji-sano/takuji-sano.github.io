@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 16 Oct 2021 15:14:56 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Oct 2021 23:49:54 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub token の Update について</title>
+      <link>https://takuji-sano.github.io/blog/git-token-update/</link>
+      <pubDate>Wed, 20 Oct 2021 23:49:54 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/git-token-update/</guid>
+      <description>Git Credential manager core 最初は、Linux 版をインストールして設定しており、動作していたように見えましたが、token の有効期限切れで更新しようとしたときに</description>
+    </item>
+    
     <item>
       <title>WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る</title>
       <link>https://takuji-sano.github.io/blog/zsh_env/</link>
