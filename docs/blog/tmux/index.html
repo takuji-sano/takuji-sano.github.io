@@ -14,7 +14,7 @@
 </script>
 
 <meta charset="utf-8">
-    <title>SANO BLOG | GitHub token の Update について</title>
+    <title>SANO BLOG | tmux 入れてみる</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="https://takuji-sano.github.io/favicon-32x32.png">
     
@@ -28,37 +28,37 @@
     
     <link href="https://takuji-sano.github.io/css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://takuji-sano.github.io/css/custom.css">
-<meta property="og:title" content="SANO BLOG | GitHub token の Update について" />
+<meta property="og:title" content="SANO BLOG | tmux 入れてみる" />
 
 
 
 
-<meta name="description" content="Git Credential manager core 最初は、Linux 版をインストールして設定しており、動作してい">
+<meta name="description" content="tmux を入れてみる はじめに 普段の開発時にターミナルマルチプレクサとして、screen コマンドを使用しています。">
 <meta property="og:title" content=" | " />
 <meta property="og:site_name" content="SANO BLOG">
-<meta property="og:description" content="Git Credential manager core 最初は、Linux 版をインストールして設定しており、動作してい">
-<meta property="og:url" content="https://takuji-sano.github.io/blog/git-token-update/">
+<meta property="og:description" content="tmux を入れてみる はじめに 普段の開発時にターミナルマルチプレクサとして、screen コマンドを使用しています。">
+<meta property="og:url" content="https://takuji-sano.github.io/blog/tmux/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tech_chiba">
 
-<link rel="canonical" href="https://takuji-sano.github.io/blog/git-token-update/">
+<link rel="canonical" href="https://takuji-sano.github.io/blog/tmux/">
 
-<meta name="twitter:description" content="Git Credential manager core 最初は、Linux 版をインストールして設定しており、動作してい">
-<meta property="article:published_time" content="2021-10-20T23:49:54&#43;09:00">
-<meta property="article:updated_time" content="2021-10-20T23:49:54&#43;09:00">
+<meta name="twitter:description" content="tmux を入れてみる はじめに 普段の開発時にターミナルマルチプレクサとして、screen コマンドを使用しています。">
+<meta property="article:published_time" content="2021-10-25T22:07:59&#43;09:00">
+<meta property="article:updated_time" content="2021-10-25T22:07:59&#43;09:00">
 
 
 
 
 
     
-<meta property="og:image" content="https://takuji-sano.github.io/img/pexels-markus-winkler-4584830.jpg">
-<meta property="og:image:url" content="https://takuji-sano.github.io/img/pexels-markus-winkler-4584830.jpg">
+<meta property="og:image" content="https://takuji-sano.github.io/img/pexels-spotwizardlee-9265319.jpg">
+<meta property="og:image:url" content="https://takuji-sano.github.io/img/pexels-spotwizardlee-9265319.jpg">
     
 
-<meta name="twitter:title" content="GitHub token の Update について">
+<meta name="twitter:title" content="tmux 入れてみる">
 <link rel="preload" href="https://takuji-sano.github.io/css/monokai-sublime.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://takuji-sano.github.io/css/sweetalert2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -117,10 +117,10 @@
         </div>
 <div class="mx-auto my-10 max-w-6xl">
     <div class="mx-3 col-span-3 lg:col-span-2 px-2">
-        <h1 class="title text-5xl">GitHub token の Update について</h1>
+        <h1 class="title text-5xl">tmux 入れてみる</h1>
         <section class="mb-4">
             <hr class="my-2">
-            <h4 id="date"><span class="icon-access_time text-xl mr-2"></span>2021/10/20 </h4>
+            <h4 id="date"><span class="icon-access_time text-xl mr-2"></span>2021/10/25 </h4>
             
             <h4><span class="icon-person text-xl mt-1 mr-2"></span>Takuji Sano</h4>
             
@@ -128,61 +128,63 @@
             <hr class="my-2">
         </section>
         
-        <img class="my-4" src="https://takuji-sano.github.io/img/pexels-markus-winkler-4584830.jpg">
+        <img class="my-4" src="https://takuji-sano.github.io/img/pexels-spotwizardlee-9265319.jpg">
         
-        <div class="content py-1"><h1 id="git-credential-manager-core">Git Credential manager core</h1>
-<p>最初は、Linux 版をインストールして設定しており、動作していたように見えましたが、token の有効期限切れで更新しようとしたときに、情報が少なく困りました。<br>
-色々見ていると、WSL2 に Ubuntu 版を入れて使っている人は少数派だったようです。<br>
-そのため、下記を参考に、設定を無効にしました。</p>
-<ul>
-<li><a href="http://memomo2.blogspot.com/2018/12/gitsource-treeauthentication-failed.html">http://memomo2.blogspot.com/2018/12/gitsource-treeauthentication-failed.html</a></li>
-</ul>
-<p>というわけで、情報が多い Windows 版をインストールして、WSL2 と連携させて運用する方法に切り替えました。</p>
-<ul>
-<li><a href="https://bitto.jp/posts/%E6%8A%80%E8%A1%93/WSL/wsl-git-credential/">https://bitto.jp/posts/%E6%8A%80%E8%A1%93/WSL/wsl-git-credential/</a></li>
-</ul>
-<h1 id="トークンの更新について">トークンの更新について</h1>
-<p>token の有効期限が近づいてきたら github からメールが来ます。<br>
-このときに token を再発行して設定するわけですが、再設定するコマンドを探しても見つけられませんでした。 <br>
-Windows の認証を一度削除するとうまくいくようですので、下記のサイトを参考に設定してみました。</p>
-<ul>
-<li><a href="https://qiita.com/k3ntar0/items/03be3a1396a77a0d3f26">https://qiita.com/k3ntar0/items/03be3a1396a77a0d3f26</a></li>
-<li><a href="https://webbibouroku.com/Blog/Article/git-logout-win">https://webbibouroku.com/Blog/Article/git-logout-win</a></li>
-</ul>
-<p>次に git にアクセスするとユーザ名とパスワードを聞かれるので、そのときに新しいトークンを設定すれば解決と。</p>
+        <div class="content py-1"><h1 id="tmux-を入れてみる">tmux を入れてみる</h1>
+<h2 id="はじめに">はじめに</h2>
+<p>普段の開発時にターミナルマルチプレクサとして、screen コマンドを使用しています。<br>
+私自身は、コーディングをバリバリすることはあまりないため、screen でも特に不満はなかったんです。<br>
+そんな中、YouTube に <a href="https://www.youtube.com/c/devaslife">devaslife</a> の <a href="https://www.youtube.com/watch?v=bSMZgXzC9AA">How to build a portfolio website using Next.js, Chakra UI, Framer Motion, and Three.js</a> が表示されました。<br>
+1:39:24 の長編動画というところにインパクトがあり、ちょっと見てみようと軽い気持ちでクリックしたんです。<br>
+も〜う。イッキ見ですよ。<br>
+のっけから、おしゃれな雰囲気でコンソール画面とキーボードが映し出されて、一言も喋らないんです。<br>
+新しい！<br>
+しかも、日本語の文章を書くようにソース書いてるんです！まあ、これ以上は実際に見てくださいって感じですけど。<br>
+で、他の動画も見たり、作者の Takuya Matsuyama さんのブログを遡るように読んで、メッチャ感銘受けました。<br>
+一言でいうと「カッコいい」んです。<br>
+ようするに、<a href="https://blog.craftz.dog/my-analysis-on-programming-youtubers-in-japan-a498a0640337">最近のプログラマー系YouTuberの分析と差別化戦略メモ</a>にあるように、Takuya さんの戦略にハマっただけなんですけどね（笑）<br>
+そのエッセンスを少しでも吸収しようと、tmux というターミナルマルチプレクサを入れてみようと思い立ちました。</p>
+<h2 id="さて入れてみよう">さて入れてみよう</h2>
+<p>数少ない Takuya さんとの共通点である、vim と zsh は既に入ってるので、tmux を入れてみます。<br>
+もしかして入ってないよね？と、おもむろに、</p>
+<pre tabindex="0"><code>$ tmux
+</code></pre><p>と打ってみると、入ってるやん！<br>
+知らんかった。何か入れたときに一緒に入ったのか？デフォルトで入ってるのか？<br>
+Mac も WSL2 の Ubuntu18.04 も入ってた。<br>
+使い方は、まだ全くわかりませんが、今回の目的には到達しました。（笑）</p>
 </div>
         <div class="share m-2 grid grid-cols-2 lg:grid-cols-3 gap-2">
-            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fgit-token-update%2f&text=GitHub%20token%20%e3%81%ae%20Update%20%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank"
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2ftmux%2f&text=tmux%20%e5%85%a5%e3%82%8c%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
                 title="Tweet" class="share-button twitter">
                 <div class="text-white text-center">
                     <span class="icon-twitter text-lg mr-2"></span>Twitter
                 </div>
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fgit-token-update%2f&t=GitHub%20token%20%e3%81%ae%20Update%20%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftakuji-sano.github.io%2fblog%2ftmux%2f&t=tmux%20%e5%85%a5%e3%82%8c%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
                 title="Facebook" class="share-button facebook">
                 <div class="text-white text-center">
                     <span class="icon-facebook text-lg mr-2"></span>Facebook
                 </div>
             </a>
-            <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fgit-token-update%2f&title=GitHub%20token%20%e3%81%ae%20Update%20%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank"
+            <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2ftmux%2f&title=tmux%20%e5%85%a5%e3%82%8c%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank"
                 title="hatena" class="share-button hatena">
                 <div class="text-white text-center">
                     <span class="icon-hatenabookmark text-lg mr-2"></span>Hatena
                 </div>
             </a>
-            <a href="https://getpocket.com/edit?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fgit-token-update%2f&title=GitHub%20token%20%e3%81%ae%20Update%20%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" title="pocket"
+            <a href="https://getpocket.com/edit?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2ftmux%2f&title=tmux%20%e5%85%a5%e3%82%8c%e3%81%a6%e3%81%bf%e3%82%8b" target="_blank" title="pocket"
                 class="share-button pocket">
                 <div class="text-white text-center">
                     <span class="icon-get-pocket text-lg mr-2"></span>Pocket
                 </div>
             </a>
-            <a href="https://timeline.line.me/social-plugin/share?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2fgit-token-update%2f" class="share-button line">
+            <a href="https://timeline.line.me/social-plugin/share?url=https%3a%2f%2ftakuji-sano.github.io%2fblog%2ftmux%2f" class="share-button line">
                 <div class="text-white text-center">
                     <span class="icon-line text-lg mr-2"></span>LINE
                 </div>
             </a>
             <a href="javascript:OnClickURL();" class="share-button url" title="Copy to Clipboard"
-                data-clipboard-text="GitHub token の Update について https://takuji-sano.github.io/blog/git-token-update/" id="url">
+                data-clipboard-text="tmux 入れてみる https://takuji-sano.github.io/blog/tmux/" id="url">
                 <div class="text-white text-center">
                     <span class="icon-link text-lg mr-2"></span>Copy
                 </div>
@@ -193,21 +195,14 @@ Windows の認証を一度削除するとうまくいくようですので、下
             <div class="grid grid-cols-2">
                 <div class="col-span-1">
                     
-                    <a class="previous lg:text-2xl" href="https://takuji-sano.github.io/blog/zsh_env/">
+                    <a class="previous lg:text-2xl" href="https://takuji-sano.github.io/blog/git-token-update/">
                         <div
                             class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                            <span class="icon-keyboard_arrow_left"></span> WSL2 &#43; zsh &#43; prezto &#43; powerline でアガる環境を作る
+                            <span class="icon-keyboard_arrow_left"></span> GitHub token の Update について
                         </div>
                     </a>
                     
                 </div>
-                
-                <a class="next lg:text-2xl" href="https://takuji-sano.github.io/blog/tmux/">
-                    <div
-                        class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
-                        tmux 入れてみる <span class="icon-keyboard_arrow_right"></span>
-                    </div>
-                </a>
                 
             </div>
         </aside>

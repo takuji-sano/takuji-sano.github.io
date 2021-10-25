@@ -6,7 +6,7 @@
     <description>Recent content on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Oct 2021 23:49:54 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Oct 2021 22:07:59 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Project</title>
       <link>https://takuji-sano.github.io/products/example/</link>
@@ -14,6 +14,15 @@
       
       <guid>https://takuji-sano.github.io/products/example/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan dapibus purus, vel maximus erat facilisis vel. Suspendisse eu ipsum consequat, sodales nulla vel, faucibus velit. Fusce imperdiet lacus nec cursus auctor. In vulputate arcu et nulla placerat, nec pulvinar quam rhoncus. Praesent vel placerat nunc. Mauris elit felis, pulvinar egestas risus ut, fermentum ullamcorper orci. Integer tempor, neque sed fermentum eleifend, ligula est tincidunt purus, sodales semper elit enim ut mi.</description>
+    </item>
+    
+    <item>
+      <title>tmux 入れてみる</title>
+      <link>https://takuji-sano.github.io/blog/tmux/</link>
+      <pubDate>Mon, 25 Oct 2021 22:07:59 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/tmux/</guid>
+      <description>tmux を入れてみる はじめに 普段の開発時にターミナルマルチプレクサとして、screen コマンドを使用しています。 私自身は、コーディングをバリバリす</description>
     </item>
     
     <item>

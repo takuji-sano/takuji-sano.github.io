@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SANO BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Oct 2021 23:49:54 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Oct 2021 22:07:59 +0900</lastBuildDate><atom:link href="https://takuji-sano.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tmux 入れてみる</title>
+      <link>https://takuji-sano.github.io/blog/tmux/</link>
+      <pubDate>Mon, 25 Oct 2021 22:07:59 +0900</pubDate>
+      
+      <guid>https://takuji-sano.github.io/blog/tmux/</guid>
+      <description>tmux を入れてみる はじめに 普段の開発時にターミナルマルチプレクサとして、screen コマンドを使用しています。 私自身は、コーディングをバリバリす</description>
+    </item>
+    
     <item>
       <title>GitHub token の Update について</title>
       <link>https://takuji-sano.github.io/blog/git-token-update/</link>
